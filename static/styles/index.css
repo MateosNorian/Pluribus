@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.hero-section-wrapper {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10rem;
+  padding-top: 7rem;
+}
+
+.grid-lines {
+  background-image: url("../images/grid-lines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero + .hero {
+  margin-top: 5rem;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero div:nth-child(2) {
+  background-size: cover;
+  background-position: center;
+}
+
+.hero a {
+  display: block;
+  padding-top: 2rem;
+  font-size: 2.3rem;
+  color: #eeb71e;
+}
+
+.hero i {
+  padding-left: 10px;
+}
+
+.benefits-section {
+  margin-top: 5rem;
+}
+
+.benefits-section ul {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+
+.benefits-section div + div {
+  margin-top: 5rem;
+}
+
+.benefits-section div h4 {
+  margin-bottom: 15px;
+}
+
+.benefits-section .benefit-container {
+  padding: 30px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+
+.arrow-link {
+  display: block;
+  padding-top: 2rem;
+  font-size: 2.3rem;
+}
+
+.arrow-link i {
+  padding-left: 10px;
+}
+
+.learn-more {
+  margin-bottom: 10rem;
+  outline: 1px solid white;
+  text-align: center;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.what-is-section {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.button-section {
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+  background-color: #0b0d17;
+}
+
+.facebook-quote {
+  margin: 8rem 0rem 8rem 0rem;
+}
+
+.sidekick {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #bb86fc;
+  font-family: "Barlow", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+
+.sidekick :before:after {
+  font-family: "Barlow", sans-serif;
+  color: #bb86fc;
+  font-size: 34px;
+}
+
+.sidekick :before {
+  content: "\201e";
+}
+
+.sidekick :after {
+  content: "\201c";
+}
+
+.sidekick cite {
+  font-size: 50%;
+  text-align: center;
+  top: 50%;
+}
+
+.sidekick cite:before {
+  content: " \2015 ";
+}
+
+.pluribus-explainer-section {
+  position: relative;
+  margin: 10rem 0rem 10rem 0rem;
+  height: 400px;
+}
+
+.pluribus-explainer-section .header-tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 75%;
+  width: 90%;
+  background-color: rgba(187, 134, 252, 0.5);
+  padding: 10px;
+}
+
+.pluribus-explainer-section .quote-body {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #0b0d17;
+  color: #d0d6f9;
+  padding: 30px 20px 30px 20px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+  height: 80%;
+}
+
+.pluribus-explainer-section .link-tab {
+  background-color: #ffffff;
+  color: #0b0d17;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.pluribus-explainer-section .link-tab .link-tab-link {
+  color: #0b0d17;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.grid div {
+  background-color: #0b0d17;
+  border: 1px solid #d0d6f9;
+  color: #d0d6f9;
+  padding: 20px;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.feature-section {
+  margin-top: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feature-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 75px;
+  margin-top: 4rem;
+}
+
+.feature-grid .feature-header {
+  background-color: white;
+  color: #0b0d17;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  top: -25px;
+  left: 25px;
+  font-size: 2.5rem;
+  min-width: 100px;
+  text-align: center;
+}
+
+.feature-grid .feature-item {
+  position: relative;
+  background-color: #0b0d17;
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #d0d6f9;
+  color: #d0d6f9;
+  padding: 40px 20px 20px 20px;
+  font-size: 2rem;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.feature-grid .feature-item a {
+  display: block;
+  padding-top: 20px;
+  color: #eeb71e;
+}
+
+.feature-grid .feature-item i {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    gap: 100px;
+    height: 350px;
+  }
+  .hero div:nth-child(2) {
+    width: 500px;
+    border-top: 1px solid #d0d6f9;
+    border-right: 1px solid #d0d6f9;
+    border-bottom: 1px solid #d0d6f9;
+    padding: 30px;
+  }
+  .grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-grid .feature-item {
+    text-align: left;
+  }
+  .facebook-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sidekick {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 10px;
+    padding-bottom: 15rem;
+  }
+  .hero + .hero {
+    margin: 0px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .hero div:nth-child(2) {
+    border: 1px solid #d0d6f9;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */

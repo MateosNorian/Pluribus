@@ -1,0 +1,332 @@
+@import "./variables";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.hero-section-wrapper {
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 10rem;
+  padding-top: 7rem;
+}
+
+.grid-lines {
+  background-image: url("../images/grid-lines.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero + .hero {
+  margin-top: 5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div:nth-child(2) {
+    // outline: 1px solid red;
+
+    // background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  // background: url("../assets/shared/gabriele-garanzelli-PzO_CitnJdI-unsplash.jpg")
+  //   no-repeat center center fixed;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // height: 100%;
+
+  a {
+    display: block;
+    padding-top: 2rem;
+    font-size: 2.3rem;
+    color: $gold;
+  }
+
+  i {
+    padding-left: 10px;
+  }
+}
+
+.benefits-section {
+  margin-top: 5rem;
+  ul {
+    list-style-type: circle;
+    margin-left: 30px;
+  }
+
+  div + div {
+    margin-top: 5rem;
+  }
+
+  div {
+    h4 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .benefit-container {
+    padding: 30px;
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 1px;
+
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  }
+}
+
+.arrow-link {
+  display: block;
+  padding-top: 2rem;
+  font-size: 2.3rem;
+
+  i {
+    padding-left: 10px;
+  }
+}
+
+.learn-more {
+  margin-bottom: 10rem;
+  outline: 1px solid white;
+  text-align: center;
+
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.what-is-section {
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.button-section {
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+  background-color: $dark-blue;
+}
+
+.facebook-quote {
+  margin: 8rem 0rem 8rem 0rem;
+}
+
+.sidekick {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid $dark-purple;
+  font-family: "Barlow", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  font-weight: 100;
+
+  :before:after {
+    font-family: "Barlow", sans-serif;
+    color: $dark-purple;
+    font-size: 34px;
+  }
+
+  :before {
+    content: "\201e";
+  }
+
+  :after {
+    content: "\201c";
+  }
+
+  cite {
+    font-size: 50%;
+    text-align: center;
+    top: 50%;
+  }
+
+  cite:before {
+    content: " \2015 ";
+  }
+}
+
+.pluribus-explainer-section {
+  position: relative;
+  margin: 10rem 0rem 10rem 0rem;
+  height: 400px;
+
+  .header-tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75%;
+    width: 90%;
+    background-color: $dark-purple-transparent;
+    padding: 10px;
+  }
+  .quote-body {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: $dark-blue;
+    // z-index: 10;
+    color: $light-purple;
+    padding: 30px 20px 30px 20px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    height: 80%;
+  }
+  .link-tab {
+    background-color: $white;
+    color: $dark-blue;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+
+    .link-tab-link {
+      color: $dark-blue;
+    }
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+
+  div {
+    background-color: $dark-blue;
+    border: 1px solid $light-purple;
+    color: $light-purple;
+    padding: 20px;
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+.feature-section {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 20px;
+  row-gap: 75px;
+  margin-top: 4rem;
+  .feature-header {
+    background-color: white;
+    color: $dark-blue;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    top: -25px;
+    left: 25px;
+    font-size: 2.5rem;
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .feature-item {
+    position: relative;
+    background-color: $dark-blue;
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid $light-purple;
+    color: $light-purple;
+    padding: 40px 20px 20px 20px;
+    font-size: 2rem;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+
+    a {
+      display: block;
+      padding-top: 20px;
+      color: $gold;
+    }
+
+    i {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    gap: 100px;
+    height: 350px;
+  }
+
+  .hero div:nth-child(2) {
+    width: 500px;
+    border-top: 1px solid $light-purple;
+    border-right: 1px solid $light-purple;
+    border-bottom: 1px solid $light-purple;
+
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    .feature-item {
+      text-align: left;
+    }
+  }
+
+  .facebook-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidekick {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .hero-section-wrapper {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 10px;
+
+    padding-bottom: 15rem;
+  }
+
+  .hero + .hero {
+    margin: 0px;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 10px;
+
+    div:nth-child(2) {
+      border: 1px solid $light-purple;
+      width: 100%;
+    }
+  }
+}

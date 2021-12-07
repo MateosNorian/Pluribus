@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import Hand from "./components/Hand";
+import React from "react";
+import { v4 as uuidv4 } from "uuid";
+import createCardObj from "./utils/createCardObj";
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    axios.get("http://127.0.0.1:5000/api/hands").then((response) => {
+      setData(response.data);
+    });
+  }, []);
+
+  if (!data) return null;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {data.map((arr) => {
+        let hand = createCardObj(arr);
+        return <Hand hand={hand} key={uuidv4()} />;
+      })}
+    </>
   );
 }
 

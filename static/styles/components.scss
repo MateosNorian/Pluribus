@@ -1,0 +1,61 @@
+@import "./variables";
+
+.gradient-text {
+  color: #8480ff;
+  background-image: linear-gradient(to right, #d53f8c, #8480ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+@mixin gradientWrapper($from-color, $to-color) {
+  background: rgba(115, 112, 255, 0.01);
+  background: linear-gradient(to bottom, $from-color 0%, $to-color 100%);
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+
+  padding: 8rem 2rem 8rem 2rem;
+}
+
+.gradient-wrapper {
+  background: rgba(115, 112, 255, 0.01);
+  background: linear-gradient(
+    to bottom,
+    rgba(115, 112, 255, 0.01) 0%,
+    #1a1957 100%
+  );
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+
+  padding: 8rem 2rem 8rem 2rem;
+}
+
+.intro-section {
+  text-align: center;
+  background-color: $navy-blue;
+  margin: 1rem 0rem 0rem 0rem;
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+
+  h5 {
+    margin-top: -3rem;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .intro-section {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .intro-section {
+    background-image: url("../assets/home/background-home-desktop.jpg");
+  }
+}

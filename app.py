@@ -49,12 +49,14 @@ try:
 
     #     return jsonify(rows)
 
-    @app.route('/')
-    def fetch_community_cards():
+    @app.route('/api/hands')
+    def fetch_all_hands():
         cur.execute('''
-        select lookup.hole_cards, lookup_c1.card c1,  lookup_c2.card c2,  lookup_c3.card c3,  lookup_c4.card c4,  lookup_c5.card c5 from cash_hand_player_statistics as hand
-                join lookup_hole_cards as lookup
-                    on lookup.id_holecard = hand.id_holecard
+        select hand.id_hand, lookup_h1.card h1, lookup_h2.card h2, lookup_c1.card c1,  lookup_c2.card c2,  lookup_c3.card c3,  lookup_c4.card c4,  lookup_c5.card c5 from cash_hand_player_statistics as hand
+                join lookup_cards as lookup_h1
+					on holecard_1 = lookup_h1.id_card
+				join lookup_cards as lookup_h2
+					on holecard_2 = lookup_h2.id_card
                 join cash_hand_summary as summary
                     on hand.id_hand = summary.id_hand
                 left join lookup_cards as lookup_c1
@@ -67,7 +69,7 @@ try:
                     on card_4 = lookup_c4.id_card
                 left join lookup_cards as lookup_c5
                     on card_5 = lookup_c5.id_card
-            where id_player = 6 and lookup.id_gametype = 1;
+            where id_player = 6;
         ''')
         rows = cur.fetchall()
 

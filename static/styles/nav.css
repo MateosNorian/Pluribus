@@ -1,0 +1,121 @@
+nav {
+  padding: 2rem;
+  background-color: #0b0d17;
+}
+
+nav .large-nav {
+  display: none;
+}
+
+nav[data-toggle="close"] {
+  position: static;
+  width: 100%;
+  height: 60px;
+}
+
+nav[data-toggle="close"] .close-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+nav[data-toggle="close"] .open-content {
+  display: none;
+}
+
+nav[data-toggle="open"] {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: #0b0d17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav[data-toggle="open"] .close-content {
+  display: none;
+}
+
+nav[data-toggle="open"] .open-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav[data-toggle="open"] .open-content img[id="hamburger"] {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 30px;
+  width: 30px;
+}
+
+nav[data-toggle="open"] .open-content ul {
+  display: block;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  nav[data-toggle="close"] .close-content {
+    display: none;
+  }
+  nav[data-toggle="close"] .open-content {
+    display: none;
+  }
+  nav[data-toggle="open"] .close-content {
+    display: none;
+  }
+  nav[data-toggle="open"] .open-content {
+    display: none;
+  }
+  nav {
+    padding: 3rem 5rem 5rem 5rem;
+  }
+  nav .large-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .large-nav li {
+    display: inline;
+  }
+  nav .large-nav span {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  nav .large-nav li.active {
+    color: #8480ff;
+    background-image: -webkit-gradient(linear, left top, right top, from(#d53f8c), to(#8480ff));
+    background-image: linear-gradient(to right, #d53f8c, #8480ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+  }
+  nav .large-nav li + li {
+    margin-left: 5rem;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

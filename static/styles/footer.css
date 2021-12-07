@@ -1,0 +1,18 @@
+.footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  background-color: #3c4665;
+  padding: 2rem;
+  margin-top: 5rem;
+  row-gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=footer.css.map */
